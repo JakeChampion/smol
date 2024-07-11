@@ -1,0 +1,9 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = []
+description = ""
+language = ""
+manifest_version = 3
+name = "smol"
+service_id = "YjpDyKD4kZHfEUGxd7h3n1"

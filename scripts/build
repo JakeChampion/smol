@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+rm -rf package && \
+mkdir -p bin && \
+wat2wasm smol.wat -o bin/main.wasm && \
+wasm-strip bin/main.wasm && \
+mkdir -p package && \
+mv bin package && \
+touch package/fastly.toml && \
+tar c - package | gzip --best > package.tar.gz && \
+rm -rf package
